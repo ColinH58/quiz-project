@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import { Header, Footer, Blog, Resume, Home } from "../src/Components/index"
-import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
+import { Header, Footer, Quiz } from "../src/Components/index"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,9 +9,7 @@ function App() {
       <BrowserRouter>
         <Header />
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/resume' element={<Resume />} />
+            <Route path='/' element={<Quiz />} />
           </Routes>
         <Footer />
       </BrowserRouter>

@@ -3,10 +3,6 @@ import React from "react";
 const Quiz = () => {
     return(
         <div>
-            <h1>Quiz Time</h1>
-            <hr />
-            <h2>What Type of Freshwater Fish are you!?</h2>
-            <hr />
             <h3>Which one best describes you?</h3>
             <ul>
                 <li>I'm Independent</li>
@@ -16,9 +12,8 @@ const Quiz = () => {
             </ul>
             <button>Next</button>
             <button>Previous</button>
-            <p>Question 1 of 5</p>
         </div>
     )
 }
 
-export default Quiz
+export default Quiz;
