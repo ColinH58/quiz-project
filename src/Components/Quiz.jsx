@@ -10,15 +10,16 @@ const Quiz = () => {
         fetch('../db/quizQuestions.json', {
             method: "GET",
             headers: {
-                "Content-Type": "application/json",
-                // "id": "id",
-                // "text": "text",
-                // "description": "description",
+                // "Content-Type": "application/json",
+                "id": "id",
+                "text": "text",
+                "description": "description",
             },
         })
             .then(response => response.json())
             .then((result) => {
                 setQuestion(result)
+                console.log(result)
             })
             .catch((error) => console.log(error))
     }, [])
