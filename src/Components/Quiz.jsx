@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Quiz = () => {
+    const [question, setQuestion] = useState([]);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [finalTally, setFinalTally] = useState(0);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+
+    useEffect(() => { 
+        const quizQuestions = [
+            { text: 'Which Option Best Describes You?', options: ['A', 'B', 'C', 'D'] },
+        ];
+        setQuestion(quizQuestions);
+    }, []);
+
     return(
         <div>
             <h3>Which one best describes you?</h3>
